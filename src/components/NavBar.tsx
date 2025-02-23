@@ -14,6 +14,7 @@ import {
   NavigationMenuLink,
 } from "@/components/ui/navigation-menu";
 import { ShineBorder } from "./magicui/shine-border";
+import { InteractiveHoverButton } from "./magicui/interactive-hover-button";
 
 export function NavBar() {
 
@@ -79,12 +80,11 @@ export function NavBar() {
           </div>
 
           {/* Apply Now Button */}
-          <Button
-            variant="outline"
+          <InteractiveHoverButton
             className="hidden md:inline-flex border-red-600 text-red-600 hover:bg-red-600 hover:text-white ml-4"
           >
             Apply Now
-          </Button>
+        </InteractiveHoverButton>
         </div>
       </div>
     </header>
