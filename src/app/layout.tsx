@@ -4,7 +4,7 @@ import "./globals.css";
 
 import { MagicCursor } from "@/components/MagicCursor";
 import { NavBar } from "@/components/NavBar";
-import { ScrollArea } from "@/components/ui/scroll-area";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,8 +31,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <NavBar/>
         <MagicCursor/>
+        <NavBar/>
         {children}
 
       </body>

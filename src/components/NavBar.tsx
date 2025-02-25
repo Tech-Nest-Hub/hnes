@@ -57,6 +57,8 @@ export function NavBar() {
   );
 
   return (
+    <div className="fixed top-0 left-0 right-0 z-50">
+
     <header className="w-full border-b bg-white fixed">
       <div className="mx-8">
         <div className="container flex h-16 items-center">
@@ -134,7 +136,7 @@ export function NavBar() {
                         <NavigationMenuLink
                           href="/events/"
                           className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-blue-50 hover:text-blue-500"
-                        >
+                          >
                           <div className="text-sm font-medium leading-none">
                             Upcoming Events
                           </div>
@@ -236,7 +238,7 @@ export function NavBar() {
                       "text-lg font-semibold p-2 rounded-md transition-colors",
                       isActive("/contact") && "bg-blue-500 text-white"
                     )}
-                  >
+                    >
                     Contact Us
                   </Link>
                   <div className="mt-4 pt-4 border-t">
@@ -259,5 +261,6 @@ export function NavBar() {
         </div>
       </div>
     </header>
+                    </div>
   );
 }

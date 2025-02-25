@@ -1,9 +1,11 @@
-import Image from "next/image";
+import { HeroSectionCarousel } from "@/components/Carousel";
+
 
 export default function App() {
   return (
    <>
 
+  <HeroSectionCarousel/>
    </>
   );
 }
